@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playme | Playlist 1 </title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .title{
+            font-family: 'Work Sans', sans-serif;
+        }
+        #back{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <a href="playlist.html" class="text-2xl text-white absolute z-10 left-4 top-3"><i class="fa-regular fa-circle-left"></i></a>
+
+    <div id="back" class="container1 h-[270px] sticky w-screen flex flex-col justify-end bg-[url('bg/EIGHTYSIX.jpg')] bg-center bg-no-repeat bg-cover">
+        <div class="background  flex flex-col justify-end pb-5 items-center">
+                <div class="music-name text-center">
+                    <span id="songtitle" class="text-4xl my-4 text-white font-mono">Doobey Gehraiyaan</span> <br>
+                    <span id="artist" class="text-sm text-white font-sans">SawanoHiroyuki</span>
+                </div>
+        </div>
+        <div class="player flex flex-col p-2 text-white">
+            <div class="buttons text-4xl px-8 mb-5 flex flex-row justify-center space-x-14">
+                <i id="perviousbtn" class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-play" id="play"></i>
+                <i id="nextbtn" class="next fa-solid fa-forward-step"></i>
+            </div>
+            <div class="range text-center">
+                <input type="range" id="progress" min="0" max="100" value="0" class="w-[90%]">
+            </div>
+        </div>
+    </div>
+    <div class="playlist bg-[#071E3D] text-white h-screen overflow-y-scroll">
+        <h1 class="text-xl p-2">Chapters</h1>
+
+        
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Doobey_Gehraiyaan" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Kesariya_Brahmāstra" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Kho_Gaye_Hum_Kahan" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Mileya_Mileya" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="OFFO" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Udd_Gaye" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+        <div id="52" class="music songItemPlay p-2 flex flex-row">
+            <div class="music-img w-[40%] h-24">
+                <img id="bg/bg(9)" class=" rounded-xl w-[100%] h-[100%]" alt="">
+            </div>
+            <div class="music-title flex flex-col justify-center px-4 w-[60%]">
+                <p id="Woh_Din_Chhichhore" class=" title font-['Combo', cursive;]"><!--song name in javascript file--></p>
+                <p>2:54</p>
+            </div>
+        </div>
+    </div>
+    <script src="hindi-songs.js"></script>
+</body>
+</html>

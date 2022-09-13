@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playme | ad free music on the go</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper {
+        /* width: 300px;
+        height: 320px; */
+        width: 74%;
+        height: 57%;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      /* .swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+      }
+
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+
+      .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
+
+      .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
+
+      .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
+
+      .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      } */
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <a href="index.html" class="text-2xl md:text-6xl text-white absolute z-10 left-4 top-3"><i class="fa-regular fa-circle-left"></i></a>
+
+  <div class="container1 bg-[url('images/background.webp')] bg-cover bg-center w-screen h-screen flex flex-col justify-end">
+    <div class="logo my-5 md:my-10 flex justify-center">
+      <img src="images/logo.png" class="w-[60%]" alt="logo">
+    </div>
+    <div class="contain md:h-[47rem] h-[26rem] bg-white w-screen space-y-10 flex flex-col justify-center" style="border-top-left-radius:70px;border-top-right-radius:70px;">
+      <h1 class="text-black text-center text-4xl md:text-7xl">Playlist</h1>
+      <div class="swiper mySwiper md:h-[32rem]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-[url('bg/hindi-song.jpg')] bg-cover"><a href="playlist2.html" class="h-[100%] w-[100%] text-2xl md:text-6xl flex items-end justify-start p-4">Hindi Song</a></div>
+          <div  class="swiper-slide bg-[url('bg/english-song.jpg')] bg-cover"><a href="playlist1.html" class="h-[100%] w-[100%] text-2xl md:text-6xl flex items-end justify-start p-4">English Song</a></div>
+          <div class="swiper-slide bg-[url('bg/japanese-songbg2.jpg')] bg-cover"><a href="playlist3.html " class="h-[100%] w-[100%] text-2xl md:text-6xl flex items-end justify-start p-4">Japanese Song</a></div>
+          <div class="swiper-slide bg-[url('bg/kpop.jpg')] bg-cover"><a href="playlist4.html" class="h-[100%] w-[100%] text-2xl md:text-6xl flex items-end justify-start p-4">K-pop</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        effect:"cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+/*.typewriter p {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*border-right: .15em solid orange; /* The typwriter cursor */
+    /*white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: ;/* Adjust as needed 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }*/
+  
+  /* The typing effect */
+  /*@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  */
+  /* The typewriter cursor effect */
+  /*@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }*/
+  .playlist::-webkit-scrollbar {
+    display: none;
+  }
+  .wrapper {
+    width: 15px;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to{
+      width: 100;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+@tailwind utilities;
