@@ -17,6 +17,9 @@ let songs = [
     {songName: "OST SuzumeNanoka" , artist: "Alan Walker" , filepath: "krish/OST_SuzumeNanoka.mp3" , coverpath: "bg/OST_SuzumeNanoka.jpg"},
     {songName: "Your Name Original" , artist: "Alan Walker" , filepath: "krish/Your_name.mp3" , coverpath: "bg/Your_name.jpg"},
     {songName: "ただ声一つ" , artist: "Alan Walker" , filepath: "krish/ただ声一つ.mp3" , coverpath: "bg/ただ声一つ.jpg"},
+    {songName: "Amanojaku" , artist: "Alan Walker" , filepath: "krish/Amanojaku.mp3" , coverpath: "bg/Amanojaku.jpg"},
+    {songName: "Dream Lantern Hindi Cover" , artist: "Alan Walker" , filepath: "krish/Dream_Lantern_Hindi_Cover.mp3" , coverpath: "bg/Dream_Lantern_Hindi_Cover.jpg"},
+    {songName: "Sword_Art_Online_Opening" , artist: "Alan Walker" , filepath: "krish/Sword_Art_Online_Opening.mp3" , coverpath: "bg/Sword_Art_Online_Opening.jpg"},
 ]
 //name of the song
 
@@ -178,6 +181,18 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach ((element)=>
             case 'ただ声一つ':
                 document.getElementById("songtitle").innerText = songs[9].songName;
                 document.getElementById("artist").innerText = songs[9].artist;
+                break;
+            case 'Amanojaku':
+                document.getElementById("songtitle").innerText = songs[10].songName;
+                document.getElementById("artist").innerText = songs[10].artist;
+                break;
+            case 'Dream_Lantern_Hindi_Cover':
+                document.getElementById("songtitle").innerText = songs[11].songName;
+                document.getElementById("artist").innerText = songs[11].artist;
+                break;
+            case 'Sword_Art_Online_Opening':
+                document.getElementById("songtitle").innerText = songs[12].songName;
+                document.getElementById("artist").innerText = songs[12].artist;
                 break;
         }
 
